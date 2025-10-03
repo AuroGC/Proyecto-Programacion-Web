@@ -9,6 +9,13 @@ header{
     
 }
 
+.top-nav-container {
+  display: flex;               /* activa flexbox */
+  justify-content: space-between; /* separa izquierda y derecha */
+  align-items: center;         /* centra verticalmente */
+  background-color: #18181b;
+}
+
 .header-container{
     border: 1px solid red;
     display: flex;
@@ -19,14 +26,32 @@ header{
     padding-top: 11px;
 }
 
+
+
 .layout-izquierda{
-    background-color: #ffff;
+  display: flex;
+  gap: 20px;
 }
 
-.nav-container{
-    border: 1px solid rgb(0, 4, 255);
-    
+
+.contenedor-texto{
+  text-align: center;
+  
 }
+
+.texto{
+  color: white;
+}
+
+.layout-textos{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 15px;
+}
+
+
+
 
 svg{
     width: 40px;
@@ -34,38 +59,34 @@ svg{
     max-width: 50%;
     display: block;
     margin:  auto;
-    
 }
 
-li{
-    text-align: justify;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-}
 
 nav a{
     text-decoration: none;
     color: inherit;
     font-size: 14px;
+    font-weight: 450;
+    
 }
 
-nav li{
-    background-color: aliceblue;
-    display:inline-table;
-    width:33%;
-    color: #fa7525;
-    font-weight: 800;
-    text-align: center;
-   
+.link-texto:hover{
+  color: #fa7525;
 }
 
-.lista-nav{
-    margin-left: -40px;
-    margin-right: -11px;
+.layout-derecha{
+  
+  box-shadow: #fa7525;
+  display: flex;
+  align-items: center;
 }
 
-
-
-
+.profile{
+  width: 30px;                 /* tamaño del perfil */
+  height: 30px;
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 50px;
+}
 
 
 /* RESET HTML */
@@ -90,7 +111,10 @@ margin: 0;
 body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
-  background-color: #19171c;
+  background-color: #ffffff;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
 }
 
 
